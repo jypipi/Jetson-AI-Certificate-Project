@@ -1,6 +1,6 @@
 # Personal Items Detection
 ## Background
-There are many items on my table, so an AI item dectector would definitely help me to find and take my items before leaving home. Therefore, in this project, the model is trained to detect my cell phone, watch, calculator and mask and mark them with squares of different colors. In addition, it can also check if I've worn a mask and my watch. It enables me to save much time when getting prepared to commute on every busy weekday.
+There are many items on my table, so an AI item dectector would definitely help me to find and take my items before leaving home. Therefore, in this project, the model is trained to detect my cell phone, watch, calculator and mask and mark them with squares of different colors. In addition, it can also check if I've worn a mask and my watch. It enables me to save much time when getting prepared to commute and be safe on every busy weekday.
 
 # Procedure
 ## Hardware
