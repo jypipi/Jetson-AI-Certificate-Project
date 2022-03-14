@@ -23,7 +23,7 @@ In this new directory, you are going to create labels for your objects in a text
 * Each line contains one label.
 ![image](https://github.com/jypipi/Jetson-AI-Certificate-Project/blob/main/Images/txt.png)
 
-## Import files and Launch a Container
+## Import Files and Launch a Container
 ```bash
 $ git clone --recursive https://github.com/dusty-nv/jetson-inference
 $ git clone https://github.com/jypipi/Jetson-AI-Certificate-Project
