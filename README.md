@@ -47,16 +47,10 @@ In the pop-up window, add the dataset path of the label.txt before collecting da
 For my dataset, I collected more than 800 images in total.
 
 ## Train the Model
-Once data collection is completed, run the `train_ssd.py` to start training:
+Once data collection is completed, run the `train_model.sh` to start training:
 ```bash
 $ cd ~/jetson-inference/python/training/detection/ssd/
-$ python3 train_ssd.py
-   -–dataset-type=voc
-   --data=data/<DATASET>
-   --model-dir=models/<MODEL NAME>
-   --batch-size=2
-   --workers=1
-   --epochs=40
+$ sh train_model.sh
 ```
 Due to the limited memory of the Jetson nano 2GB kit, I used `--batch-size=2 --workers=1` to keep it from getting frozen.
 
@@ -68,13 +62,8 @@ $ python3 onnx_export.py --model-dir=models/<MODEL NAME>
 ## Run the Model
 Now run the model to see how it works:
 ```bash
-$ detectnet
-   --model=models/<MODEL NAME>/ssd-mobilenet.onnx 
-   --labels=models/<MODEL NAME>/labels.txt
-   --input-blob=input_0
-   --output-cvg=scores
-   --output-bbox=boxes
-   /dev/video0
+$ cd ~/jetson-inference/python/training/detection/ssd/
+$ sh run_model.sh
 ```
 When it detects an item, the object would be highlighted with a colored rectangle, with its name and the detection belief shown at the top.
 ![image](https://github.com/jypipi/Jetson-AI-Certificate-Project/blob/main/Images/Result.jpg)
