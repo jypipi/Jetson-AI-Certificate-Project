@@ -26,6 +26,7 @@ In this new directory, you are going to create labels for your objects in a text
 ## Launch a Container
 ```bash
 $ git clone --recursive https://github.com/dusty-nv/jetson-inference # Only run this line for the first time
+$ git clone https://github.com/jypipi/Jetson-AI-Certificate-Project
 $ cd ~/jetson-inference
 $ docker/run.sh
 ```
