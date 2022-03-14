@@ -44,7 +44,7 @@ $ cd ~/jetson-inference/python/training/detection/ssd/
 $ camera-capture /dev/video0
 ```
 In the pop-up window, add the dataset path of the label.txt before collecting data.
-For my dataset, I collected more than 800 images in total.
+For my dataset, I collected more than 800 images in total, which include the objects captured from different angles and backgrounds.
 
 ## Train the Model
 Once data collection is completed, run the `train_model.sh` to start training:
