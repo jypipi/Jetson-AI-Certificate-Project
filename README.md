@@ -15,8 +15,12 @@ There are many items on my table, so an AI item dectector would definitely help 
 ## Preparation
 Open the following directory and then create a new folder to store your data:
 ```bash
+# Create a project folder
 $ cd ~/jetson-inference/python/training/detection/ssd/data
 $ mkdir <PROJECT NAME>
+# Import files
+$ git clone --recursive https://github.com/dusty-nv/jetson-inference
+$ git clone https://github.com/jypipi/Jetson-AI-Certificate-Project.git
 ```
 In this new directory, you are going to create labels for your objects in a text file.
 * Create a text file and name it "labels.txt".
@@ -25,8 +29,7 @@ In this new directory, you are going to create labels for your objects in a text
 
 ## Import Files and Launch a Container
 ```bash
-$ git clone --recursive https://github.com/dusty-nv/jetson-inference
-$ git clone https://github.com/jypipi/Jetson-AI-Certificate-Project
+# Run a container
 $ cd ~/jetson-inference
 $ docker/run.sh
 ```
@@ -64,7 +67,7 @@ $ python3 onnx_export.py --model-dir=models/<MODEL NAME>
 Now run the model to see how it works:
 ```bash
 $ cd ~/jetson-inference/python/training/detection/ssd/
-$ sh run_model.sh
+$ python3 jetson_project.py
 ```
 When it detects an item, the object would be highlighted with a colored rectangle, with its name and the detection belief shown at the top.
 ![image](https://github.com/jypipi/Jetson-AI-Certificate-Project/blob/main/Images/Result.jpg)
